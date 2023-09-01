@@ -1,0 +1,248 @@
+/* Default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+.border {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.spacebetween{
+    justify-content: space-around;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col1 {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.col2 {
+    width: 65%;
+    margin-right: auto;
+    margin-top: 1%;
+}
+
+.col3 {
+    width: 18%;
+}
+
+body { min-height: 100vh; }
+
+header {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    background-color: rgb(8, 18, 43);
+    background-image: linear-gradient(90deg, rgb(235, 238, 243) 13%, rgb(59, 82, 131) 42%, rgb(0, 0, 95) 80%);
+}
+
+.heading {
+    color:white;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.h1 {
+    font-weight: bold;
+    font-size: 3.25rem;
+    margin: 2rem auto;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-left: 1%;
+}
+
+#city {
+    font-size: 2rem;
+    width: 100%;
+    border-radius: .4rem;
+    border: .1rem solid black;
+    height: 4.5rem;
+    padding-bottom: .5rem;
+    padding-top: 0px;
+    padding-left: .5rem;
+}
+
+#search-btn {
+    margin-bottom: 2rem;
+    background-color: #02143a;
+    color: white;
+}
+
+.btn {
+    font-size: 2rem;
+    width: 100%;
+    background-color: lightgrey;
+    color: black;
+    border: none;
+    border-radius: .4rem;
+    margin-top: 2rem;
+    padding: .7rem 0;
+}
+
+hr {
+    border-top: .2rem solid rgba(0,0,0, 1);
+}
+
+#current-weather {
+    height: 50%;
+    border: .1rem solid black;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 3rem;
+    font-weight: bold;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 1%;
+}
+
+#current-weather-icon {
+    filter: drop-shadow(0 0 0.75rem grey);
+}
+
+.favorable {
+    background-color: rgb(11, 100, 11);
+    font-size: 2rem;
+    border-radius: .5rem;
+}
+
+.moderate {
+    background-color: rgb(175, 175, 22);
+    font-size: 2rem;
+    border-radius: .5rem;
+}
+
+.severe {
+    background-color: rgb(168, 18, 18);
+    font-size: 2rem;
+    border-radius: .5rem;
+}
+
+span {
+    padding: 0 1.5rem;
+    color: white;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+}
+
+.card-body {
+    background-color:#489ec9;
+    height: 20rem;
+    padding-left: 4%;
+    padding-top: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+p {
+    font-size: 2rem;
+    color: white;
+}
+
+#five-day-header {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+/* Extra large devices (1200px and up) */
+@media (max-width: 1144px) {
+    .col1 {
+        width: 100%;
+        text-align: center;
+    }
+    #city-search, hr, .btn {
+        width: 30rem;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+    #city {
+        text-align: center;
+    }
+    #search-history {
+        display: flex;
+        flex-direction: column;
+    }
+    #search-btn {
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 0;
+    }
+    .col2 {
+        width: 100%;
+    }
+    .col3 {
+        width: 100%;
+    }
+    #current-weather {
+        height: 20%;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 2rem;
+        width: 500px;
+    }
+    h2 {
+        justify-content: center;
+    }
+    .card-body {
+        background-color: #40baf7;
+        height: 20rem;
+        padding-left: 0;
+        padding-top: 1%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 20rem;
+        margin: .5rem auto;
+    }
+}
+
+/* Large devices (992px and up) */
+@media (max-width: 992px) {}
+
+/* Medium devices (768px and up) */
+@media (max-width: 768px) {
+    .col1 {
+        width: 100%;
+    }
+    .col2 {
+        width: 100%;
+    }
+    .col3 {
+        width: 100%;
+    }
+}
+
+/* Small devices (landscape phones, 630px and up) */
+@media (max-width: 630px) {
+    #current-weather {
+        width: 300px;
+    }
+}
